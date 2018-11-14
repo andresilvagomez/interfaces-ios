@@ -18,6 +18,7 @@
 		9F449FD4219C5E2D0050784B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F034335219C57E400603993 /* Assets.xcassets */; };
 		9F449FD5219C5E2D0050784B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F034332219C57E300603993 /* Main.storyboard */; };
 		9F449FDE219C5E830050784B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F449FDD219C5E830050784B /* MapKit.framework */; };
+		9F449FEC219C62380050784B /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F449FEB219C62380050784B /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9F449FDA219C5E2D0050784B /* Production.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Production.plist; path = /Users/andresilvagomez/Desktop/PlatziFinanzas/Production.plist; sourceTree = "<absolute>"; };
 		9F449FDB219C5E740050784B /* Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Production.entitlements; sourceTree = "<group>"; };
 		9F449FDD219C5E830050784B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9F449FEB219C62380050784B /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				9F034330219C57E300603993 /* ViewController.swift */,
 				9F034332219C57E300603993 /* Main.storyboard */,
+				9F449FEB219C62380050784B /* View.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F449FEC219C62380050784B /* View.xib in Resources */,
 				9F034339219C57E400603993 /* LaunchScreen.storyboard in Resources */,
 				9F034336219C57E400603993 /* Assets.xcassets in Resources */,
 				9F034334219C57E300603993 /* Main.storyboard in Resources */,
