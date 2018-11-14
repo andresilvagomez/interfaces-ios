@@ -20,6 +20,10 @@
 		9F449FDE219C5E830050784B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F449FDD219C5E830050784B /* MapKit.framework */; };
 		9F449FEC219C62380050784B /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F449FEB219C62380050784B /* View.xib */; };
 		9FDFDF05219C6CD500CD505D /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF04219C6CD500CD505D /* Transactions.storyboard */; };
+		9FDFDF07219C6D6500CD505D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF06219C6D6500CD505D /* Profile.storyboard */; };
+		9FDFDF0B219C6D9E00CD505D /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF0A219C6D9E00CD505D /* Statistics.storyboard */; };
+		9FDFDF0E219C6DB900CD505D /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF0C219C6DB900CD505D /* Budget.storyboard */; };
+		9FDFDF11219C6E1B00CD505D /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF10219C6E1B00CD505D /* Add.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		9F449FDD219C5E830050784B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9F449FEB219C62380050784B /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		9FDFDF04219C6CD500CD505D /* Transactions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
+		9FDFDF06219C6D6500CD505D /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		9FDFDF0A219C6D9E00CD505D /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
+		9FDFDF0D219C6DB900CD505D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PlatziFinanzas/Application/Main/Main/Base.lproj/Budget.storyboard; sourceTree = "<group>"; };
+		9FDFDF10219C6E1B00CD505D /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,9 @@
 		9F449FE5219C606F0050784B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9FDFDF0F219C6DC300CD505D /* Add */,
+				9FDFDF09219C6D7700CD505D /* Statistics */,
+				9FDFDF08219C6D6E00CD505D /* Budget */,
 				9F449FEA219C60AE0050784B /* Main */,
 				9F449FE9219C60A30050784B /* Profile */,
 				9F449FE8219C609A0050784B /* Transactions */,
@@ -174,6 +185,7 @@
 		9F449FE9219C60A30050784B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				9FDFDF06219C6D6500CD505D /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -186,6 +198,30 @@
 				9F449FEB219C62380050784B /* View.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		9FDFDF08219C6D6E00CD505D /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				9FDFDF0C219C6DB900CD505D /* Budget.storyboard */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		9FDFDF09219C6D7700CD505D /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				9FDFDF0A219C6D9E00CD505D /* Statistics.storyboard */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		9FDFDF0F219C6DC300CD505D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				9FDFDF10219C6E1B00CD505D /* Add.storyboard */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,10 +310,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDFDF07219C6D6500CD505D /* Profile.storyboard in Resources */,
 				9F449FEC219C62380050784B /* View.xib in Resources */,
 				9F034339219C57E400603993 /* LaunchScreen.storyboard in Resources */,
+				9FDFDF0E219C6DB900CD505D /* Budget.storyboard in Resources */,
+				9FDFDF11219C6E1B00CD505D /* Add.storyboard in Resources */,
 				9F034336219C57E400603993 /* Assets.xcassets in Resources */,
 				9F034334219C57E300603993 /* Main.storyboard in Resources */,
+				9FDFDF0B219C6D9E00CD505D /* Statistics.storyboard in Resources */,
 				9FDFDF05219C6CD500CD505D /* Transactions.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +370,14 @@
 				9F034338219C57E400603993 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9FDFDF0C219C6DB900CD505D /* Budget.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FDFDF0D219C6DB900CD505D /* Base */,
+			);
+			name = Budget.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
