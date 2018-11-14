@@ -29,7 +29,7 @@
 		9F034338219C57E400603993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F03433A219C57E400603993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F449FD9219C5E2D0050784B /* Production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Production.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F449FDA219C5E2D0050784B /* PlatziFinanzas copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PlatziFinanzas copy-Info.plist"; path = "/Users/andresilvagomez/Desktop/PlatziFinanzas/PlatziFinanzas copy-Info.plist"; sourceTree = "<absolute>"; };
+		9F449FDA219C5E2D0050784B /* Production.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Production.plist; path = /Users/andresilvagomez/Desktop/PlatziFinanzas/Production.plist; sourceTree = "<absolute>"; };
 		9F449FDB219C5E740050784B /* Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Production.entitlements; sourceTree = "<group>"; };
 		9F449FDD219C5E830050784B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -59,7 +59,6 @@
 				9F449FDB219C5E740050784B /* Production.entitlements */,
 				9F03432D219C57E300603993 /* PlatziFinanzas */,
 				9F03432C219C57E300603993 /* Products */,
-				9F449FDA219C5E2D0050784B /* PlatziFinanzas copy-Info.plist */,
 				9F449FDC219C5E830050784B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -76,12 +75,9 @@
 		9F03432D219C57E300603993 /* PlatziFinanzas */ = {
 			isa = PBXGroup;
 			children = (
-				9F03432E219C57E300603993 /* AppDelegate.swift */,
-				9F034330219C57E300603993 /* ViewController.swift */,
-				9F034332219C57E300603993 /* Main.storyboard */,
-				9F034335219C57E400603993 /* Assets.xcassets */,
-				9F034337219C57E400603993 /* LaunchScreen.storyboard */,
-				9F03433A219C57E400603993 /* Info.plist */,
+				9F449FE2219C60410050784B /* Resources */,
+				9F449FE1219C601C0050784B /* Base */,
+				9F449FE0219C60080050784B /* Application */,
 			);
 			path = PlatziFinanzas;
 			sourceTree = "<group>";
@@ -92,6 +88,98 @@
 				9F449FDD219C5E830050784B /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F449FE0219C60080050784B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9F449FE5219C606F0050784B /* Main */,
+				9F449FE4219C60610050784B /* Authentication */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9F449FE1219C601C0050784B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9F03432E219C57E300603993 /* AppDelegate.swift */,
+				9F03433A219C57E400603993 /* Info.plist */,
+				9F449FDA219C5E2D0050784B /* Production.plist */,
+				9F034337219C57E400603993 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9F449FE2219C60410050784B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F449FE3219C60520050784B /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F449FE3219C60520050784B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9F034335219C57E400603993 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9F449FE4219C60610050784B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				9F449FE7219C608A0050784B /* Sign In */,
+				9F449FE6219C60790050784B /* OnBoarding */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		9F449FE5219C606F0050784B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9F449FEA219C60AE0050784B /* Main */,
+				9F449FE9219C60A30050784B /* Profile */,
+				9F449FE8219C609A0050784B /* Transactions */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9F449FE6219C60790050784B /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		9F449FE7219C608A0050784B /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		9F449FE8219C609A0050784B /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		9F449FE9219C60A30050784B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9F449FEA219C60AE0050784B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9F034330219C57E300603993 /* ViewController.swift */,
+				9F034332219C57E300603993 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69RRCEKXZC;
-				INFOPLIST_FILE = PlatziFinanzas/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlatziFinanzas/Base/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69RRCEKXZC;
-				INFOPLIST_FILE = PlatziFinanzas/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlatziFinanzas/Base/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
