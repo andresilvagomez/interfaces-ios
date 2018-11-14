@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +31,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpM-13-m6h">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="GreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="XnX-te-Orh"/>
                                         </constraints>
@@ -43,7 +44,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="GreenColor"/>
                                 <constraints>
                                     <constraint firstItem="wpM-13-m6h" firstAttribute="top" secondItem="Cj4-EV-U5j" secondAttribute="top" id="9vN-KC-vnW"/>
                                     <constraint firstAttribute="height" constant="98" id="MX2-Oy-D3Z"/>
@@ -80,7 +81,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bod-lp-hR9">
                                         <rect key="frame" x="204" y="0.0" width="86" height="50"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="TwitterColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="M9p-fH-o4I"/>
                                             <constraint firstAttribute="width" constant="86" id="XMi-uk-kQI"/>
@@ -117,7 +118,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niW-BM-s2m">
                                         <rect key="frame" x="20" y="155" width="374" height="45"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="GreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="8dh-lS-7Kk"/>
                                         </constraints>
@@ -170,5 +171,11 @@
     </scenes>
     <resources>
         <image name="LaunchScreen" width="304" height="153"/>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TwitterColor">
+            <color red="0.0" green="0.67450980392156867" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
