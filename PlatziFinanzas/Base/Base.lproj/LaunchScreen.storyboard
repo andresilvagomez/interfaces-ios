@@ -19,17 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="unk-sY-ZBT">
-                                <rect key="frame" x="35.5" y="257" width="304" height="153"/>
+                                <rect key="frame" x="40" y="259.5" width="295" height="148"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="304" id="GvL-Nz-vjB"/>
-                                    <constraint firstAttribute="height" constant="153" id="SII-Vb-KBj"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="304" id="GvL-Nz-vjB"/>
+                                    <constraint firstAttribute="width" secondItem="unk-sY-ZBT" secondAttribute="height" multiplier="304:153" id="ZCk-p8-kTH"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="unk-sY-ZBT" secondAttribute="trailing" constant="40" id="dxC-DY-ul6"/>
                             <constraint firstItem="unk-sY-ZBT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="erq-gW-PuP"/>
                             <constraint firstItem="unk-sY-ZBT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mcV-sE-You"/>
+                            <constraint firstItem="unk-sY-ZBT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="vc0-08-hhy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
