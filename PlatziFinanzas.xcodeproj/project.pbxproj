@@ -12,6 +12,12 @@
 		9F034334219C57E300603993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F034332219C57E300603993 /* Main.storyboard */; };
 		9F034336219C57E400603993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F034335219C57E400603993 /* Assets.xcassets */; };
 		9F034339219C57E400603993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F034337219C57E400603993 /* LaunchScreen.storyboard */; };
+		9F449FCF219C5E2D0050784B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F034330219C57E300603993 /* ViewController.swift */; };
+		9F449FD0219C5E2D0050784B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F03432E219C57E300603993 /* AppDelegate.swift */; };
+		9F449FD3219C5E2D0050784B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F034337219C57E400603993 /* LaunchScreen.storyboard */; };
+		9F449FD4219C5E2D0050784B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F034335219C57E400603993 /* Assets.xcassets */; };
+		9F449FD5219C5E2D0050784B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F034332219C57E300603993 /* Main.storyboard */; };
+		9F449FDE219C5E830050784B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F449FDD219C5E830050784B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,10 @@
 		9F034335219C57E400603993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F034338219C57E400603993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F03433A219C57E400603993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F449FD9219C5E2D0050784B /* Production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Production.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F449FDA219C5E2D0050784B /* PlatziFinanzas copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PlatziFinanzas copy-Info.plist"; path = "/Users/andresilvagomez/Desktop/PlatziFinanzas/PlatziFinanzas copy-Info.plist"; sourceTree = "<absolute>"; };
+		9F449FDB219C5E740050784B /* Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Production.entitlements; sourceTree = "<group>"; };
+		9F449FDD219C5E830050784B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,14 +42,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F449FD1219C5E2D0050784B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F449FDE219C5E830050784B /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9F034322219C57E300603993 = {
 			isa = PBXGroup;
 			children = (
+				9F449FDB219C5E740050784B /* Production.entitlements */,
 				9F03432D219C57E300603993 /* PlatziFinanzas */,
 				9F03432C219C57E300603993 /* Products */,
+				9F449FDA219C5E2D0050784B /* PlatziFinanzas copy-Info.plist */,
+				9F449FDC219C5E830050784B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				9F03432B219C57E300603993 /* PlatziFinanzas.app */,
+				9F449FD9219C5E2D0050784B /* Production.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +84,14 @@
 				9F03433A219C57E400603993 /* Info.plist */,
 			);
 			path = PlatziFinanzas;
+			sourceTree = "<group>";
+		};
+		9F449FDC219C5E830050784B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F449FDD219C5E830050784B /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +114,23 @@
 			productReference = 9F03432B219C57E300603993 /* PlatziFinanzas.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9F449FCD219C5E2D0050784B /* Production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F449FD6219C5E2D0050784B /* Build configuration list for PBXNativeTarget "Production" */;
+			buildPhases = (
+				9F449FCE219C5E2D0050784B /* Sources */,
+				9F449FD1219C5E2D0050784B /* Frameworks */,
+				9F449FD2219C5E2D0050784B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Production;
+			productName = PlatziFinanzas;
+			productReference = 9F449FD9219C5E2D0050784B /* Production.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +143,16 @@
 				TargetAttributes = {
 					9F03432A219C57E300603993 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					9F449FCD219C5E2D0050784B = {
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -113,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				9F03432A219C57E300603993 /* PlatziFinanzas */,
+				9F449FCD219C5E2D0050784B /* Production */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +186,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F449FD2219C5E2D0050784B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F449FD3219C5E2D0050784B /* LaunchScreen.storyboard in Resources */,
+				9F449FD4219C5E2D0050784B /* Assets.xcassets in Resources */,
+				9F449FD5219C5E2D0050784B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +205,15 @@
 			files = (
 				9F034331219C57E300603993 /* ViewController.swift in Sources */,
 				9F03432F219C57E300603993 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F449FCE219C5E2D0050784B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F449FCF219C5E2D0050784B /* ViewController.swift in Sources */,
+				9F449FD0219C5E2D0050784B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +360,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2M68W2XP5;
+				DEVELOPMENT_TEAM = 69RRCEKXZC;
 				INFOPLIST_FILE = PlatziFinanzas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.platzi.PlatziFinanzas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,8 +379,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2M68W2XP5;
+				DEVELOPMENT_TEAM = 69RRCEKXZC;
 				INFOPLIST_FILE = PlatziFinanzas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +389,47 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.platzi.PlatziFinanzas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9F449FD7219C5E2D0050784B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Production.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69RRCEKXZC;
+				INFOPLIST_FILE = "PlatziFinanzas copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.platzi.PlatziFinanzas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9F449FD8219C5E2D0050784B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Production.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69RRCEKXZC;
+				INFOPLIST_FILE = "PlatziFinanzas copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.platzi.PlatziFinanzas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -331,6 +450,15 @@
 			buildConfigurations = (
 				9F03433E219C57E400603993 /* Debug */,
 				9F03433F219C57E400603993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F449FD6219C5E2D0050784B /* Build configuration list for PBXNativeTarget "Production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F449FD7219C5E2D0050784B /* Debug */,
+				9F449FD8219C5E2D0050784B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
