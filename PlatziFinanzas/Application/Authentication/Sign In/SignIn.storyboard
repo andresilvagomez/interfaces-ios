@@ -153,7 +153,7 @@
                                             <constraint firstAttribute="height" constant="45" id="8dh-lS-7Kk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Sign In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -171,6 +171,9 @@
                                                 <color key="value" name="GreenShadow"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="xot-u3-Aob" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="xAx-sJ-C2q"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -213,6 +216,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zx-xn-Skb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="92.753623188405811" y="87.053571428571431"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="759-MN-KeK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="xot-u3-Aob" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WwC-Qb-jib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="87"/>
         </scene>
     </scenes>
     <resources>
