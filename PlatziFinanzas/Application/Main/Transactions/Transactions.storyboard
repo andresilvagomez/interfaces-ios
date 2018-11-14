@@ -139,6 +139,7 @@
                         <viewLayoutGuide key="safeArea" id="4YN-i2-Xzt"/>
                     </view>
                     <navigationItem key="navigationItem" title="Transactions" id="cvS-Hw-xir"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="STG-Ik-DfU" id="A9V-gs-VLh"/>
                     </connections>
@@ -147,12 +148,13 @@
             </objects>
             <point key="canvasLocation" x="2218.840579710145" y="-50.892857142857139"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="ozt-D4-8Zw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1oU-J2-W4x" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SC6-PO-cPw"/>
+                    <tabBarItem key="tabBarItem" title="" image="TabBarTransactions" id="6Ha-V2-4th"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="dXQ-JS-BqL">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -177,6 +179,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TabBarTransactions" width="20" height="20"/>
         <namedColor name="GrayColor">
             <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
