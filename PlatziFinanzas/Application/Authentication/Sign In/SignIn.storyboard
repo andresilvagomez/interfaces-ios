@@ -57,36 +57,36 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OZC-hc-cuL">
                                 <rect key="frame" x="62" y="664" width="290" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVA-r0-eng">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVA-r0-eng">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="50"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="FacebookColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="86" id="0Es-ds-toI"/>
                                             <constraint firstAttribute="height" constant="50" id="0KM-Nw-rjB"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" image="Facebook">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lo-ea-WHf">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lo-ea-WHf">
                                         <rect key="frame" x="102" y="0.0" width="86" height="50"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="0wT-ex-jvV"/>
                                             <constraint firstAttribute="width" constant="86" id="KVG-X9-0bg"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" image="Google">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bod-lp-hR9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bod-lp-hR9">
                                         <rect key="frame" x="204" y="0.0" width="86" height="50"/>
                                         <color key="backgroundColor" name="TwitterColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="M9p-fH-o4I"/>
                                             <constraint firstAttribute="width" constant="86" id="XMi-uk-kQI"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" image="Twitter">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -94,7 +94,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGf-SD-ua8">
                                 <rect key="frame" x="164.66666666666666" y="614" width="85" height="30"/>
-                                <state key="normal" title="Sign up with"/>
+                                <state key="normal" title="Sign up with">
+                                    <color key="titleColor" name="GreenColor"/>
+                                </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6f-gL-GER">
                                 <rect key="frame" x="0.0" y="271" width="414" height="220"/>
@@ -114,7 +116,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qum-qb-FV0">
                                         <rect key="frame" x="299" y="108" width="95" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Forgot Password"/>
+                                        <state key="normal" title="Forgot Password">
+                                            <color key="titleColor" name="RedColor"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niW-BM-s2m">
                                         <rect key="frame" x="20" y="155" width="374" height="45"/>
@@ -170,9 +174,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Facebook" width="10" height="18"/>
+        <image name="Google" width="17" height="18"/>
         <image name="LaunchScreen" width="304" height="153"/>
+        <image name="Twitter" width="19" height="16"/>
+        <namedColor name="FacebookColor">
+            <color red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="GreenColor">
             <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RedColor">
+            <color red="0.81568627450980391" green="0.0078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TwitterColor">
             <color red="0.0" green="0.67450980392156867" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
