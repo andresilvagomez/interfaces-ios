@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--On Boarding Steps View Controller-->
         <scene sceneID="Mg3-GM-8rg">
             <objects>
-                <viewController id="hej-kG-zlz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnBoardingSteps" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hej-kG-zlz" customClass="OnBoardingStepsViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ooa-6d-12E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +52,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a0H-ng-7GW"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Rfv-Bs-QLw" id="Ao6-mw-MN6"/>
+                        <outlet property="onBoaringImage" destination="epg-L8-IKn" id="jTJ-gs-76w"/>
+                        <outlet property="titleLabel" destination="acb-JV-Mi2" id="fVz-Ol-ZJI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zrr-ac-yr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="-1953" y="80"/>
         </scene>
-        <!--Page View Controller-->
+        <!--On Boarding View Controller-->
         <scene sceneID="16O-b6-vRn">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="HMG-5d-pIR" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="HMG-5d-pIR" customClass="OnBoardingViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMB-Tb-T67" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-942" y="80"/>
