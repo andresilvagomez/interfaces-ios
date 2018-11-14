@@ -19,6 +19,7 @@
 		9F449FD5219C5E2D0050784B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F034332219C57E300603993 /* Main.storyboard */; };
 		9F449FDE219C5E830050784B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F449FDD219C5E830050784B /* MapKit.framework */; };
 		9F449FEC219C62380050784B /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F449FEB219C62380050784B /* View.xib */; };
+		9F62FD24219C914700A83344 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62FD23219C914700A83344 /* Shadow.swift */; };
 		9FDFDF05219C6CD500CD505D /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF04219C6CD500CD505D /* Transactions.storyboard */; };
 		9FDFDF07219C6D6500CD505D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF06219C6D6500CD505D /* Profile.storyboard */; };
 		9FDFDF0B219C6D9E00CD505D /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF0A219C6D9E00CD505D /* Statistics.storyboard */; };
@@ -41,6 +42,7 @@
 		9F449FDB219C5E740050784B /* Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Production.entitlements; sourceTree = "<group>"; };
 		9F449FDD219C5E830050784B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9F449FEB219C62380050784B /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		9F62FD23219C914700A83344 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		9FDFDF04219C6CD500CD505D /* Transactions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
 		9FDFDF06219C6D6500CD505D /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		9FDFDF0A219C6D9E00CD505D /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		9F03432D219C57E300603993 /* PlatziFinanzas */ = {
 			isa = PBXGroup;
 			children = (
+				9F62FD22219C913100A83344 /* Extensions */,
 				9F449FE2219C60410050784B /* Resources */,
 				9F449FE1219C601C0050784B /* Base */,
 				9F449FE0219C60080050784B /* Application */,
@@ -204,6 +207,14 @@
 				9F449FEB219C62380050784B /* View.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		9F62FD22219C913100A83344 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F62FD23219C914700A83344 /* Shadow.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9FDFDF08219C6D6E00CD505D /* Budget */ = {
@@ -355,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F62FD24219C914700A83344 /* Shadow.swift in Sources */,
 				9F034331219C57E300603993 /* ViewController.swift in Sources */,
 				9F03432F219C57E300603993 /* AppDelegate.swift in Sources */,
 			);
