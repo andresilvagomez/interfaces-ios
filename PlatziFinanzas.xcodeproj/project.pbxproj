@@ -22,6 +22,9 @@
 		9F62FD2C219CB23100A83344 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62FD2B219CB23100A83344 /* OnBoardingViewController.swift */; };
 		9F62FD2E219CB4FA00A83344 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62FD2D219CB4FA00A83344 /* OnBoardingStepsViewController.swift */; };
 		9F62FD30219CC47100A83344 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62FD2F219CC47100A83344 /* TransactionsViewController.swift */; };
+		9FB06216219DD12F00EEB1A9 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 9FB06215219DD12F00EEB1A9 /* Cartfile */; };
+		9FB06218219DD18800EEB1A9 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB06217219DD18800EEB1A9 /* Lottie.framework */; };
+		9FB0621A219DD18F00EEB1A9 /* Lottie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB06217219DD18800EEB1A9 /* Lottie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FDFDF05219C6CD500CD505D /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF04219C6CD500CD505D /* Transactions.storyboard */; };
 		9FDFDF07219C6D6500CD505D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF06219C6D6500CD505D /* Profile.storyboard */; };
 		9FDFDF0B219C6D9E00CD505D /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF0A219C6D9E00CD505D /* Statistics.storyboard */; };
@@ -34,6 +37,20 @@
 		9FE368CF219DADCA00606E29 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE368CE219DADCA00606E29 /* BudgetViewController.swift */; };
 		9FF2782A219C7E830083760B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF27829219C7E830083760B /* Colors.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9FB0621B219DD18F00EEB1A9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9FB0621A219DD18F00EEB1A9 /* Lottie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9F03432B219C57E300603993 /* PlatziFinanzas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatziFinanzas.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +69,8 @@
 		9F62FD2B219CB23100A83344 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		9F62FD2D219CB4FA00A83344 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
 		9F62FD2F219CC47100A83344 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		9FB06215219DD12F00EEB1A9 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		9FB06217219DD18800EEB1A9 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		9FDFDF04219C6CD500CD505D /* Transactions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
 		9FDFDF06219C6D6500CD505D /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		9FDFDF0A219C6D9E00CD505D /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
@@ -70,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB06218219DD18800EEB1A9 /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +107,7 @@
 		9F034322219C57E300603993 = {
 			isa = PBXGroup;
 			children = (
+				9FB06215219DD12F00EEB1A9 /* Cartfile */,
 				9F449FDB219C5E740050784B /* Production.entitlements */,
 				9F03432D219C57E300603993 /* PlatziFinanzas */,
 				9F03432C219C57E300603993 /* Products */,
@@ -117,6 +138,7 @@
 		9F449FDC219C5E830050784B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FB06217219DD18800EEB1A9 /* Lottie.framework */,
 				9F449FDD219C5E830050784B /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -279,6 +301,8 @@
 				9F034327219C57E300603993 /* Sources */,
 				9F034328219C57E300603993 /* Frameworks */,
 				9F034329219C57E300603993 /* Resources */,
+				9FB0621B219DD18F00EEB1A9 /* Embed Frameworks */,
+				9FB0621D219DD1E600EEB1A9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -355,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB06216219DD12F00EEB1A9 /* Cartfile in Resources */,
 				9FDFDF07219C6D6500CD505D /* Profile.storyboard in Resources */,
 				9FE368C7219CCB3100606E29 /* EmptyState.xib in Resources */,
 				9FF2782A219C7E830083760B /* Colors.xcassets in Resources */,
@@ -382,6 +407,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FB0621D219DD1E600EEB1A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F034327219C57E300603993 /* Sources */ = {
@@ -559,6 +605,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69RRCEKXZC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/PlatziFinanzas/Base/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -578,6 +628,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69RRCEKXZC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/PlatziFinanzas/Base/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
