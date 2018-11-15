@@ -22,17 +22,22 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mOo-UX-KLQ">
                                 <rect key="frame" x="0.0" y="116" width="375" height="502"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="9PG-kZ-O1D">
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="9PG-kZ-O1D">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-jw-MtQ">
-                                            <rect key="frame" x="37.5" y="6" width="115" height="50"/>
+                                            <rect key="frame" x="37.5" y="6" width="105" height="50"/>
                                             <color key="backgroundColor" name="GreenColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="115" id="id6-3y-BEr"/>
+                                                <constraint firstAttribute="width" constant="105" id="id6-3y-BEr"/>
                                                 <constraint firstAttribute="height" constant="50" id="v2T-dA-ufk"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="22"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Br-2s-Er4">
                                             <rect key="frame" x="37.5" y="6" width="300" height="50"/>
@@ -97,6 +102,7 @@
                     <navigationItem key="navigationItem" title="Budget" id="PeX-IL-FX7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="animationLayout" destination="slG-di-na6" id="XzP-Cl-4U9"/>
                         <outlet property="tableView" destination="mOo-UX-KLQ" id="ItG-Sp-42N"/>
                         <outletCollection property="animationsButtons" destination="9Id-qV-oEh" collectionClass="NSMutableArray" id="1Fa-7x-feX"/>
                         <outletCollection property="animationsButtons" destination="yYy-ZV-8uz" collectionClass="NSMutableArray" id="KxF-R0-zma"/>
