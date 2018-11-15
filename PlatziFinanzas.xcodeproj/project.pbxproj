@@ -30,6 +30,8 @@
 		9FDFDF13219C6F4A00CD505D /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFDF12219C6F4A00CD505D /* SignIn.storyboard */; };
 		9FE368C7219CCB3100606E29 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE368C6219CCB3100606E29 /* EmptyState.xib */; };
 		9FE368CB219DAA7400606E29 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE368CA219DAA7400606E29 /* TabBarViewController.swift */; };
+		9FE368CD219DAD5E00606E29 /* TransactionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE368CC219DAD5E00606E29 /* TransactionsCell.xib */; };
+		9FE368CF219DADCA00606E29 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE368CE219DADCA00606E29 /* BudgetViewController.swift */; };
 		9FF2782A219C7E830083760B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF27829219C7E830083760B /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		9FDFDF12219C6F4A00CD505D /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		9FE368C6219CCB3100606E29 /* EmptyState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyState.xib; sourceTree = "<group>"; };
 		9FE368CA219DAA7400606E29 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9FE368CC219DAD5E00606E29 /* TransactionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsCell.xib; sourceTree = "<group>"; };
+		9FE368CE219DADCA00606E29 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		9FF27829219C7E830083760B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +206,7 @@
 				9FDFDF04219C6CD500CD505D /* Transactions.storyboard */,
 				9F62FD2F219CC47100A83344 /* TransactionsViewController.swift */,
 				9FE368C6219CCB3100606E29 /* EmptyState.xib */,
+				9FE368CC219DAD5E00606E29 /* TransactionsCell.xib */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				9FDFDF0C219C6DB900CD505D /* Budget.storyboard */,
+				9FE368CE219DADCA00606E29 /* BudgetViewController.swift */,
 			);
 			path = Budget;
 			sourceTree = "<group>";
@@ -357,6 +363,7 @@
 				9FDFDF11219C6E1B00CD505D /* Add.storyboard in Resources */,
 				9F034336219C57E400603993 /* Assets.xcassets in Resources */,
 				9FDFDF13219C6F4A00CD505D /* SignIn.storyboard in Resources */,
+				9FE368CD219DAD5E00606E29 /* TransactionsCell.xib in Resources */,
 				9F034334219C57E300603993 /* Main.storyboard in Resources */,
 				9FDFDF0B219C6D9E00CD505D /* Statistics.storyboard in Resources */,
 				9FDFDF05219C6CD500CD505D /* Transactions.storyboard in Resources */,
@@ -388,6 +395,7 @@
 				9FE368CB219DAA7400606E29 /* TabBarViewController.swift in Sources */,
 				9F62FD2A219CB19D00A83344 /* OnBoardingContainerViewController.swift in Sources */,
 				9F62FD2C219CB23100A83344 /* OnBoardingViewController.swift in Sources */,
+				9FE368CF219DADCA00606E29 /* BudgetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

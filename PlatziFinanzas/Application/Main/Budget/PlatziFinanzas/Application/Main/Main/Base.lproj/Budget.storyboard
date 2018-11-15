@@ -14,19 +14,43 @@
         <!--Budget-->
         <scene sceneID="aBI-HQ-uRA">
             <objects>
-                <viewController id="yLE-b2-sKc" sceneMemberID="viewController">
+                <viewController id="yLE-b2-sKc" customClass="BudgetViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yoa-vI-Ylc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mOo-UX-KLQ">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="9PG-kZ-O1D">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="yLE-b2-sKc" id="YmI-kI-JJv"/>
+                                    <outlet property="delegate" destination="yLE-b2-sKc" id="4dJ-aP-8Az"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mOo-UX-KLQ" firstAttribute="leading" secondItem="hba-oD-mex" secondAttribute="leading" id="40J-gz-Y4L"/>
+                            <constraint firstItem="hba-oD-mex" firstAttribute="trailing" secondItem="mOo-UX-KLQ" secondAttribute="trailing" id="JNW-tc-w7T"/>
+                            <constraint firstItem="hba-oD-mex" firstAttribute="bottom" secondItem="mOo-UX-KLQ" secondAttribute="bottom" id="Ygq-mk-N8x"/>
+                            <constraint firstItem="mOo-UX-KLQ" firstAttribute="top" secondItem="hba-oD-mex" secondAttribute="top" id="luw-eV-GYS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hba-oD-mex"/>
                     </view>
                     <navigationItem key="navigationItem" title="Budget" id="PeX-IL-FX7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="mOo-UX-KLQ" id="ItG-Sp-42N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPq-Bs-V6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2452" y="1609"/>
+            <point key="canvasLocation" x="2452" y="1608.8455772113944"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Fp-MZ-Kzw">
